@@ -3,12 +3,11 @@
 const plantweek1 = 20;
 const plantweek2 = 40;
 const plantweek3 = 80;
+const maxofplants = 98;
+const scientistsPlants=100;
+const areaCircle = 3.1415 * 5 * 5;
 
-
-// Calculate the maximum number of plants that can fit in the garden (capacity)
-const maxPlants = (area / plantArea);
-console.log(`The maximun number of plants that can fit in the garden: ${maxPlants}`);
-
+ 
 function plantsGrow(plants){
    if (plants > 78){
       console.log("Pruned, stop them from exceeding the capacity of the garden");
@@ -22,14 +21,20 @@ function plantsGrow(plants){
       console.log("Planted, there is room to plant more plants.");
    }
 
+
+   plantsGrow(plantweek1);
+   plantsGrow(plantweek2);
+   plantsGrow(plantweek3);
+
    // The amount of additional space that would be required if the scientists were to start 
    // with 100 plants, and did not prune them for 10 weeks. 
    
    console.log("the additional space required starting 100 plants");
    console.log(`and did not prune them for 10 weeks: 40,960`);
 
+
    try{
-      if (100 < 98) {
+      if (scientistsPlants < 98) {
          console.log("the amount of space can hold the provided number of plants")
       }
       else{
