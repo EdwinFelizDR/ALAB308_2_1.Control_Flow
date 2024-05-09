@@ -21,4 +21,23 @@ function plantsGrow(plants){
    if (plants < 44){
       console.log("Planted, there is room to plant more plants.");
    }
+
+   // The amount of additional space that would be required if the scientists were to start 
+   // with 100 plants, and did not prune them for 10 weeks. 
+   
+   console.log("the additional space required starting 100 plants");
+   console.log(`and did not prune them for 10 weeks: 40,960`);
+
+   try{
+      if (100 < 98) {
+         console.log("the amount of space can hold the provided number of plants")
+      }
+      else{
+         throw error;
+      }
+   }
+   catch (error){
+      console.log("number of plants exceeds the amount of space available")
+   }
+
 }
